@@ -4,7 +4,7 @@ function updateTime() {
   if (losAngelesElement) {
     let losAngelesDateElement = losAngelesElement.querySelector(".date");
     let losAngelesTimeElement = losAngelesElement.querySelector(".time");
-    let losAngelesTime = moment().tz("America/Los_Angeles");
+    let losAngelesTime = moment().tz("Africa/Johannesburg");
 
     losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM	Do YYYY");
     losAngelesTimeElement.innerHTML = losAngelesTime.format(
@@ -17,7 +17,7 @@ function updateTime() {
   if (parisElement) {
     let parisDateElement = parisElement.querySelector(".date");
     let parisTimeElement = parisElement.querySelector(".time");
-    let parisTime = moment().tz("Europe/Paris");
+    let parisTime = moment().tz("Africa/Brazzaville");
 
     parisDateElement.innerHTML = parisTime.format("MMMM	Do YYYY");
     parisTimeElement.innerHTML = parisTime.format(
